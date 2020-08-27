@@ -19,6 +19,8 @@ void MainComponent::paint (juce::Graphics& g)
     g.setFont (juce::Font (16.0f));
     g.setColour (juce::Colours::red);
     g.drawText ("Hello World!", getLocalBounds(), juce::Justification::centred , true);
+    
+    g.drawFittedText("I'm ready for more complicated work", getLocalBounds(), juce::Justification::centredBottom, true );
 }
 
 void MainComponent::resized()
